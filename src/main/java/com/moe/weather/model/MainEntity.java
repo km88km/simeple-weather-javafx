@@ -9,6 +9,10 @@ public class MainEntity {
     public double getTemp() {
         return (temp - 273.15);
     }
+    public String formatedTemp() {
+        double temp = getTemp();
+        return String.format("%dC",(int)temp);
+    }
 
     public void setTemp(double temp) {
         this.temp = temp;

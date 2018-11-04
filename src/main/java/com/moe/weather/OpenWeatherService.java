@@ -11,7 +11,6 @@ import javax.ws.rs.core.Response;
 import java.io.IOException;
 
 public class OpenWeatherService implements WeatherService {
-
     private ObjectMapper mapper;
 
     public OpenWeatherService() {
