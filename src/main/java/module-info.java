@@ -3,10 +3,13 @@ module com.moe.weather {
     exports com.moe.weather.model;
     opens com.moe.weather to javafx.graphics;
     opens com.moe.weather.model to javafx.graphics;
+    opens com.moe.weather.controllers to javafx.fxml;
+    opens com.moe.weather.views to javafx.fxml;
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.base;
     requires javafx.swing;
+    requires javafx.fxml;
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
     requires jersey.common;
